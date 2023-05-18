@@ -10,8 +10,9 @@
 #include "clutils.h"
 #include "neblina_list.h"
 #include "neblina_vm.h"
-extern cl_info clinfo;
 
+extern cl_info clinfo;
+extern     int nkernelsRmat;
 
 void ** vec_len( void ** i, int * status ) {
     object_t out;
@@ -1415,7 +1416,7 @@ void ** init ( void ** i, int * status ) {
        return ret;
  
 }
-extern int nkernelsRmat;
+
  void ** neblina_rmatrix( void ** i, int * status ) {
        object_t ** in = (object_t **) i;
        int ncol = ivalue( *in[0] );

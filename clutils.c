@@ -5,6 +5,13 @@
 #include <string.h>
 
 
+cl_info clinfo;
+cl_kernel clkernels[NKERNELS];
+int nkernelsRmat;
+cl_kernel clkernelsRmat[32];
+char strkernelsRmat[32][4096];
+char rmatstat[32];
+
 size_t roundUp(int group_size, int global_size)
 {   if( group_size < global_size )
         return global_size;

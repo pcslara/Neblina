@@ -2,7 +2,8 @@
 #define __NEBLINASTD___
 
 #include "package.h"
-
+extern cl_info clinfo;
+extern     int nkernelsRmat;
 #define new_str(i) (char *) malloc( sizeof(char)*(i))
 
 

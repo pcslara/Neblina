@@ -55,13 +55,12 @@ typedef struct __cl_info {
 extern cl_device_type  proctype;
 extern int             id_device;
 
-cl_info clinfo;
-cl_kernel clkernels[NKERNELS];
-
-int nkernelsRmat;
-cl_kernel clkernelsRmat[32];
-char strkernelsRmat[32][4096];
-char rmatstat[32];
+extern cl_info clinfo;
+extern cl_kernel clkernels[NKERNELS];
+extern int nkernelsRmat;
+extern cl_kernel clkernelsRmat[32];
+extern char strkernelsRmat[32][4096];
+extern char rmatstat[32];
 
 
 cl_info GetCLInfo( char * filename );
